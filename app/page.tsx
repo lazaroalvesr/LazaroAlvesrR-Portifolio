@@ -15,7 +15,7 @@ export default function Home() {
       <StructuredData />
       <Cursor />
       <Navbar />
-      <main id="main-content">
+      <main id="main-content ">
         <Hero />
         <StatsClients />
         <Services />
