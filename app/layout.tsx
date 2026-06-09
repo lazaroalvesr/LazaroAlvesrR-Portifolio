@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
 
   title: {
-    default: "Lázaro Alves R — Desenvolvedor Web em Minas Gerais",
+    default: "Lázaro Alves R — Desenvolvedor Web",
     template: "%s | Lázaro Alves R",
   },
   description:
