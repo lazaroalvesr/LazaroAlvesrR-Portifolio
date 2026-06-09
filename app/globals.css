@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap');
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  background-color: #141414;
+  color: #F0EDEA;
+  font-family: 'DM Sans', system-ui, sans-serif;
+  font-weight: 300;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+/* Custom cursor — desktop only */
+.cursor {
+  position: fixed; width: 10px; height: 10px; border-radius: 50%;
+  background: #E8943A; pointer-events: none; z-index: 9999;
+  transform: translate(-50%, -50%);
+  transition: width .2s, height .2s;
+  mix-blend-mode: difference;
+}
+.cursor-ring {
+  position: fixed; width: 36px; height: 36px; border-radius: 50%;
+  border: 1px solid rgba(232,148,58,0.5); pointer-events: none; z-index: 9998;
+  transform: translate(-50%, -50%);
+  transition: width .35s cubic-bezier(.22,1,.36,1), height .35s cubic-bezier(.22,1,.36,1);
+}
+.cursor.big   { width: 20px; height: 20px; }
+.cursor-ring.big { width: 56px; height: 56px; }
+
+/* text-stroke utility */
+.text-stroke { color: transparent; -webkit-text-stroke: 1.5px rgba(255,255,255,0.22); }
