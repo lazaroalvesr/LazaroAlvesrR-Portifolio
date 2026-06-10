@@ -31,8 +31,9 @@ export default function About() {
             </div>
           </motion.div>
 
-          <motion.div initial={{ opacity: 0, x: 40 }} whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }} transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
             className="pt-0 lg:pt-2">
             <div className="flex items-center gap-2.5 text-amber text-[11px] tracking-[0.2em] uppercase mb-5">
               <span className="w-[18px] h-px bg-amber" /> Sobre mim

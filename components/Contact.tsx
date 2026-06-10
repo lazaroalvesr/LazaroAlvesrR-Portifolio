@@ -89,7 +89,6 @@ export default function Contact() {
             transition={{ duration: 0.7 }}
             className="flex flex-col gap-4 sm:gap-5 w-full"
           >
-
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-5">
               <div className="flex flex-col gap-2">
                 <label className="text-[11px] tracking-[0.14em] uppercase text-gray-300">Nome</label>
